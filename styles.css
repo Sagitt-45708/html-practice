@@ -214,6 +214,54 @@ p { margin: 0; }
   font-size: .92rem;
 }
 
+/* ---------- 对比示例 ---------- */
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.compare-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.compare-tag {
+  display: inline-block;
+  font-size: .74rem;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.compare-tag.bad { background: #fdeceb; color: #a3271f; }
+.compare-tag.good { background: #e9f7ef; color: #166b45; }
+
+.demo-raw { padding: 4px; }
+
+.demo-polished { padding: 6px 4px; }
+.demo-eyebrow {
+  font-size: .74rem;
+  letter-spacing: .14em;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+.demo-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.demo-body { color: var(--muted); font-size: .95rem; }
+.demo-note {
+  margin-top: 12px;
+  padding-left: 12px;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+  font-size: .88rem;
+}
+
 /* ---------- 页脚 ---------- */
 .site-footer {
   border-top: 1px solid var(--line);
@@ -227,4 +275,5 @@ p { margin: 0; }
   .header-inner { height: auto; padding: 10px 0; flex-wrap: wrap; }
   .site-nav { margin-left: 0; }
   .wrap { padding: 36px 0; }
+  .compare { grid-template-columns: 1fr; }
 }

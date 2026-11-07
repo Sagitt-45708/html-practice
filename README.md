@@ -11,6 +11,7 @@
 | `index.html` | 首页：介绍、四张卡片、学习清单 | 语义化标签、Grid 布局 |
 | `project.html` | 三个练习项目 + 踩过的坑 | 列表、`code`、内部链接 |
 | `quotes.html` | 四句名言 | `blockquote`、`cite` |
+| `tips.html` | 网页设计小知识：六条法则 + 正反示例 | 对比、留白、对齐、配色 |
 | `machine.html` + `machine.js` | 加减乘除小工具 | 表单、`select`、JS 计算与错误处理 |
 | `contact.html` | 留言表单（不会真的发送） | `label`、`required`、`preventDefault` |
 

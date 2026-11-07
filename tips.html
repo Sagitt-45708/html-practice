@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="网页设计小知识：对比、留白、对齐、重复、配色、字号与行高。">
+  <title>小知识 · HTML 学习笔记</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">HTML <span>学习笔记</span></a>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="quotes.html">名言</a>
+        <a href="tips.html">小知识</a>
+        <a href="machine.html">小机器</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>网页设计小知识</h1>
+      <p class="lead">
+        代码能让页面「跑起来」，设计才让人「愿意看下去」。下面这几条是性价比最高的：
+        不需要天赋，照着做，页面立刻不那么像作业。
+      </p>
+    </section>
+
+    <h2 class="section-title"><small>PRINCIPLES</small>六条基本法则</h2>
+    <div class="grid">
+
+      <article class="card">
+        <div class="icon">◐</div>
+        <h3>对比 Contrast</h3>
+        <p>标题和正文要拉开差距：字号、粗细、颜色至少差一项。全都一个样，读者就找不到重点。</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">▢</div>
+        <h3>留白 Whitespace</h3>
+        <p>元素之间的空隙比边框更能分区。内容挤在一起时，先加 <code>padding</code>，别急着加线。</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">⌗</div>
+        <h3>对齐 Alignment</h3>
+        <p>所有元素都应该贴着一条看不见的线。左对齐最稳，居中只适合短标题和按钮。</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">≡</div>
+        <h3>重复 Repetition</h3>
+        <p>同一套圆角、同一套颜色、同一套间距。重复制造秩序，也让页面「看起来是一个整体的」。</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">◎</div>
+        <h3>亲密性 Proximity</h3>
+        <p>相关的东西放近，不相关的放远。标题和它的正文，必须比上一段离得更近。</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎨</div>
+        <h3>配色 60-30-10</h3>
+        <p>六成中性色打底，三成主色，一成点缀色。颜色超过四种，多半会乱。</p>
+      </article>
+
+    </div>
+
+    <h2 class="section-title"><small>BEFORE / AFTER</small>同一段内容，两种做法</h2>
+
+    <div class="compare">
+      <div class="compare-item">
+        <span class="compare-tag bad">不太行</span>
+        <div class="demo-raw">
+          <p style="font-size:15px;color:#8b949e;margin:0;">今日推荐</p>
+          <p style="font-size:15px;color:#8b949e;margin:2px 0;">西安肉夹馍，腊汁肉肥瘦相间，白吉馍外脆里软，人均 12 元。</p>
+          <p style="font-size:15px;color:#8b949e;margin:0;">配一碗粉丝汤更好。</p>
+        </div>
+      </div>
+
+      <div class="compare-item">
+        <span class="compare-tag good">这样更好</span>
+        <div class="demo-polished">
+          <p class="demo-eyebrow">今日推荐</p>
+          <p class="demo-title">西安肉夹馍</p>
+          <p class="demo-body">腊汁肉肥瘦相间，白吉馍外脆里软，人均 12 元。</p>
+          <p class="demo-note">配一碗粉丝汤更好。</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title"><small>RULES</small>可以直接照抄的数值</h2>
+    <ul class="checklist">
+      <li><span class="done">1</span>正文 16px 起，行高 1.6–1.75；中文别低于 14px</li>
+      <li><span class="done">2</span>字号阶梯用 1.25 倍：16 → 20 → 25 → 31 → 39</li>
+      <li><span class="done">3</span>正文每行 30–40 个汉字（约 60–75 个英文字符）</li>
+      <li><span class="done">4</span>段落间距 ≥ 行高，卡片内边距 ≥ 20px</li>
+      <li><span class="done">5</span>圆角统一：要么全 8px，要么全 12px，别混用</li>
+      <li><span class="done">6</span>正文与背景对比度 ≥ 4.5:1（深灰 #1b2430 配白底就够）</li>
+      <li><span class="done">7</span>手机上可点区域 ≥ 44×44px，别把按钮做太小</li>
+      <li><span class="done">8</span>断点从内容出发：600px 放不下时再换列，别死记设备尺寸</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year">2026</span> HTML 学习笔记 · Web Technologies 课程练习
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
