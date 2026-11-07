@@ -1,5 +1,7 @@
 # HTML 学习笔记（练习站）
 
+![HTML 学习笔记](cover.png)
+
 一个练手用的多页静态网站，纯 HTML + CSS + 原生 JavaScript，没有框架、没有构建步骤，双击 `index.html` 就能打开。
 
 ## 页面
