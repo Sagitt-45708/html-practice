@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系 · HTML 学习笔记</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">HTML <span>学习笔记</span></a>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="quotes.html">名言</a>
+        <a href="machine.html">小机器</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>留个言</h1>
+      <p class="lead">
+        这是一个纯前端表单：不会真的发送，提交后只在页面上给个反馈。
+        用来练习 <code>label</code>、<code>input</code>、必填校验和 JavaScript。
+      </p>
+    </section>
+
+    <form class="form-card" id="contactForm" style="margin-top: 28px;">
+      <div class="field">
+        <label for="name">你的名字 *</label>
+        <input type="text" id="name" name="name" required placeholder="比如：小王">
+      </div>
+
+      <div class="field">
+        <label for="email">邮箱 *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+
+      <div class="field">
+        <label for="topic">想聊什么</label>
+        <select id="topic" name="topic">
+          <option>HTML 基础</option>
+          <option>CSS 布局</option>
+          <option>JavaScript</option>
+          <option>随便聊聊</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">留言内容</label>
+        <textarea id="message" name="message" placeholder="想说的话写在这里……"></textarea>
+      </div>
+
+      <button class="btn" type="submit">发送</button>
+      <p class="result" id="feedback" hidden></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year">2026</span> HTML 学习笔记 · Web Technologies 课程练习
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      var form = document.getElementById('contactForm');
+      var feedback = document.getElementById('feedback');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // 不刷新页面，也不真的发送
+
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+
+        feedback.hidden = false;
+        feedback.style.background = '#e9f7ef';
+        feedback.style.color = '#166b45';
+        feedback.textContent = '谢谢你，' + name + '！这条留言只在本页显示，没有发送到任何服务器（' + email + '）。';
+
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>

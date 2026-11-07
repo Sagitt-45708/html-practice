@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小机器 · HTML 学习笔记</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">HTML <span>学习笔记</span></a>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="quotes.html">名言</a>
+        <a href="machine.html">小机器</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>小机器：加减乘除</h1>
+      <p class="lead">练习表单 + JavaScript：填两个数字，选一个运算，点「计算」。</p>
+    </section>
+
+    <form class="form-card" id="machineForm" style="margin-top: 28px;">
+      <div class="field">
+        <label for="numA">第一个数字</label>
+        <input type="number" id="numA" step="any" placeholder="比如 12" required>
+      </div>
+
+      <div class="field">
+        <label for="numB">第二个数字</label>
+        <input type="number" id="numB" step="any" placeholder="比如 4" required>
+      </div>
+
+      <div class="field">
+        <label for="op">运算</label>
+        <select id="op">
+          <option value="+">加 +</option>
+          <option value="-">减 −</option>
+          <option value="*">乘 ×</option>
+          <option value="/">除 ÷</option>
+        </select>
+      </div>
+
+      <button class="btn" type="submit">计算</button>
+      <p class="result" id="result" hidden></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year">2026</span> HTML 学习笔记 · Web Technologies 课程练习
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="machine.js"></script>
+</body>
+</html>

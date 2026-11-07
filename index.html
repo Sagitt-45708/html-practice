@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 · HTML 学习笔记</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">HTML <span>学习笔记</span></a>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="quotes.html">名言</a>
+        <a href="machine.html">小机器</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>从零开始，把网页一块块搭起来</h1>
+      <p class="lead">
+        这是我学 HTML 的练习站：语义化标签、表单、导航，还有一点 JavaScript。
+        每个页面都能点开看，源代码也留在文件夹里。
+      </p>
+    </section>
+
+    <h2 class="section-title"><small>PAGES</small>站点里有什么</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🧱</div>
+        <h3>项目</h3>
+        <p>三个练习：第一个页面、导航菜单、表单验证。</p>
+        <a class="more" href="project.html">去看看 →</a>
+      </article>
+      <article class="card">
+        <div class="icon">💬</div>
+        <h3>名言</h3>
+        <p>几句关于编程和学习的话，练习引用与排版。</p>
+        <a class="more" href="quotes.html">去看看 →</a>
+      </article>
+      <article class="card">
+        <div class="icon">⚙️</div>
+        <h3>小机器</h3>
+        <p>一个能算加减乘除的小工具，练习表单和 JS。</p>
+        <a class="more" href="machine.html">去看看 →</a>
+      </article>
+      <article class="card">
+        <div class="icon">✉️</div>
+        <h3>联系</h3>
+        <p>一个不会真的发出去的留言表单。</p>
+        <a class="more" href="contact.html">去看看 →</a>
+      </article>
+    </div>
+
+    <h2 class="section-title"><small>PROGRESS</small>学习清单</h2>
+    <ul class="checklist">
+      <li><span class="done">✓</span> HTML 骨架：DOCTYPE、head、body</li>
+      <li><span class="done">✓</span> 语义化标签：header、main、section、article、footer</li>
+      <li><span class="done">✓</span> 列表、链接、图片与 alt 文本</li>
+      <li><span class="done">✓</span> 表单与输入校验</li>
+      <li><span class="done">✓</span> CSS 布局：Grid、Flex、媒体查询</li>
+      <li><span class="todo">→</span> 用 JavaScript 操作 DOM（进行中）</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year">2026</span> HTML 学习笔记 · Web Technologies 课程练习
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

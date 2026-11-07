@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目 · HTML 学习笔记</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">HTML <span>学习笔记</span></a>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="quotes.html">名言</a>
+        <a href="machine.html">小机器</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>三个练习项目</h1>
+      <p class="lead">从静态结构到交互，一步一步来。每个项目都能直接在浏览器里打开。</p>
+    </section>
+
+    <div class="grid" style="margin-top: 32px;">
+      <article class="card">
+        <div class="icon">1️⃣</div>
+        <h3>第一个页面</h3>
+        <p>标题、段落、列表、图片，把 HTML 的基本骨架跑通。</p>
+        <a class="more" href="index.html">打开首页 →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">2️⃣</div>
+        <h3>导航菜单</h3>
+        <p>用 <code>nav</code> 和链接把多个页面串起来，当前页高亮。</p>
+        <a class="more" href="quotes.html">看看效果 →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">3️⃣</div>
+        <h3>表单与计算</h3>
+        <p>输入框、下拉框、按钮，加上 JavaScript 算出结果。</p>
+        <a class="more" href="machine.html">试试小机器 →</a>
+      </article>
+    </div>
+
+    <h2 class="section-title"><small>NOTE</small>我踩过的坑</h2>
+    <ul class="checklist">
+      <li><span class="todo">!</span> 标签忘了闭合，后面整段样式都会乱</li>
+      <li><span class="todo">!</span> 图片没写 <code>alt</code>，读屏软件读不出来</li>
+      <li><span class="todo">!</span> 表单提交默认会刷新页面，要用 <code>preventDefault()</code></li>
+      <li><span class="todo">!</span> 手机上没加 <code>viewport</code>，字会小得看不清</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year">2026</span> HTML 学习笔记 · Web Technologies 课程练习
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
