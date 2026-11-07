@@ -262,6 +262,28 @@ p { margin: 0; }
   font-size: .88rem;
 }
 
+/* ---------- 安装按钮（浏览器支持时才出现） ---------- */
+.install-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-family: inherit;
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 26px -12px rgba(27, 36, 48, .65);
+}
+.install-fab.show { display: flex; }
+
 /* ---------- 页脚 ---------- */
 .site-footer {
   border-top: 1px solid var(--line);
